@@ -1,0 +1,26 @@
+.container {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+#hamburgerMenu {
+    background-color: gray;
+
+}
+
+#categories {
+    background-color: lightgrey;
+}
+
+#category-titles {
+    margin-top: 60px;
+    font-size: 25px;
+    word-spacing: 100vw;
+}
+
+#search-bar {
+    width: 40vw;
+    border-radius: 20px 20px;
+}
+
