@@ -22,5 +22,13 @@
 #search-bar {
     width: 40vw;
     border-radius: 20px 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+#inbox-time {
+    display: flex;
+    justify-content: flex-end;
 }
 
