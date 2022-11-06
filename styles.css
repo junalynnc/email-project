@@ -1,3 +1,7 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 .container {
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -15,6 +19,12 @@
     background-color: gray;
 }
 
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 #categories {
@@ -29,7 +39,7 @@
 }
 
 #search-bar {
-    width: 32vw;
+    width: 50vw;
     border-radius: 20px 20px;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -113,4 +123,9 @@ button {
   #sidenav-menu, #sidenav-button {
       display: none;
   }
+}
+
+#menu-titles svg {
+  display: block;
+  margin: auto;
 }
