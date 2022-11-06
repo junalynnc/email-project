@@ -1,11 +1,12 @@
 body {
   font-family: 'Poppins', sans-serif;
+  height: 100%;
 }
 
 .container {
     font-family: 'Poppins', sans-serif;
     display: flex;
-    height: 100vh;
+    height: 100%;
 }
 
 #menu {
@@ -24,8 +25,6 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-
-
 
 #categories {
     background-color: lightgrey;
@@ -126,6 +125,18 @@ button {
 }
 
 #menu-titles svg {
+  display: block;
+  margin: auto;
+}
+
+#profile-pic {
+  border-radius: 80%;
+  height: 40px;
+}
+
+#sidenav-menu img {
+  border-radius: 80%;
+  height: 100px;
   display: block;
   margin: auto;
 }
