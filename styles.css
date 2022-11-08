@@ -112,18 +112,6 @@ button {
     margin-left: 50px;
   }
 
-@media only screen and (max-width: 770px) {
-    #hamburger-menu, #categories {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 770px) {
-  #sidenav-menu, #sidenav-button {
-      display: none;
-  }
-}
-
 #menu-titles svg {
   display: block;
   margin: auto;
@@ -139,4 +127,51 @@ button {
   height: 100px;
   display: block;
   margin: auto;
+}
+
+/* ------------ INBOX BUTTONS ------------- */
+
+.btn-light {
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 60%;
+  border-radius: 40%;
+}
+
+.btn-light svg {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.btn-light p {
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 20px;
+}
+
+/* ------------- MEDIA QUERIES ------------- */
+
+@media only screen and (max-width: 780px) {
+  #hamburger-menu, #categories {
+      display: none;
+  }
+}
+
+@media only screen and (min-width: 779px) {
+  #sidenav-menu, #sidenav-button {
+    display: none;
+  }
+
+  /* ------------ INBOX BUTTONS ------------- */
+
+  .btn-light {
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 60%;
+  border-radius: 40%;
+  }
+
+  
 }
