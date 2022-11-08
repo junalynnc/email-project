@@ -1,12 +1,11 @@
 body {
   font-family: 'Poppins', sans-serif;
-  height: 100%;
 }
 
-.container {
+.container-fluid {
     font-family: 'Poppins', sans-serif;
     display: flex;
-    height: 100%;
+    height: 100vh;
 }
 
 #menu {
@@ -129,6 +128,7 @@ button {
   margin: auto;
 }
 
+
 /* ------------ INBOX BUTTONS ------------- */
 
 .btn-light {
@@ -150,18 +150,45 @@ button {
   font-size: 20px;
 }
 
-/* ------------- MEDIA QUERIES ------------- */
-
-@media only screen and (max-width: 780px) {
-  #hamburger-menu, #categories {
-      display: none;
-  }
+.card {
+  margin-top: 10px;
 }
 
-@media only screen and (min-width: 779px) {
+/* ----- SIDE NAV BUTTONS DESKTOP VIEW ------ */
+
+#side-buttons {
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  border-radius: 0%;
+  border: 3px solid bisque;
+  background-color: bisque;
+}
+
+/* ---------- WEB VIEW MEDIA QUERY------------- */
+
+@media only screen and (min-width: 780px) {
   #sidenav-menu, #sidenav-button {
     display: none;
   }
+}
+
+/*---- MOBILE & TABLET VIEW MEDIA QUERY--------*/
+
+@media only screen and (max-width: 779px)  {
+  #hamburger-menu, #categories {
+    display: none;
+}
+  #search-bar {
+    width: 70vw;
+    border-radius: 20px 20px;
+  }
+
+  #sidenav-button {
+    margin-top: 10px;
+  }
+}
 
   /* ------------ INBOX BUTTONS ------------- */
 
@@ -174,4 +201,3 @@ button {
   }
 
   
-}
