@@ -25,6 +25,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
 }
 
 #categories {
@@ -39,10 +40,11 @@ h2 {
 }
 
 #search-bar {
-    width: 50vw;
+    width: 40vw;
     border-radius: 20px 20px;
     margin-top: 20px;
     margin-bottom: 50px;
+    float: left;
 }
 
 #inbox-time {
@@ -68,40 +70,6 @@ button {
   margin-top: 30px;
 }
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: darkgray;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: black;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-
 #menu-titles svg {
   display: block;
   margin: auto;
@@ -110,13 +78,6 @@ button {
 #profile-pic {
   border-radius: 80%;
   height: 40px;
-}
-
-#sidenav-menu img {
-  border-radius: 80%;
-  height: 100px;
-  display: block;
-  margin: auto;
 }
 
 
@@ -182,7 +143,7 @@ button {
   margin-top: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 100%;
+  width: 14vw;
   border-radius: 10px 10px;
   border: 3px solid rgb(235, 237, 232);;
   background-color: rgb(235, 237, 232);
@@ -201,6 +162,33 @@ button {
   #sidenav-menu, #sidenav-button {
     display: none;
   }
+
+  /* ------------ VERTICAL BAR ICONS -------- */
+
+.icon-bar {
+  width: 90px; /* Set a specific width */
+  background-color: rgb(105, 104, 104); /* Dark-grey background */
+  height: 100vh;
+  padding: 0;
+}
+
+.icon-bar a {
+  display: block; /* Make the links appear below each other instead of side-by-side */
+  text-align: center; /* Center-align text */
+  padding: 16px; /* Add some padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font-size */
+}
+
+.icon-bar a:hover {
+  background-color: #000; /* Add a hover color */
+}
+
+.active {
+  background-color: rgb(255, 216, 222); /* Add an active/current color */
+}
+
 }
 
 /*---- MOBILE & TABLET VIEW MEDIA QUERY--------*/
@@ -217,9 +205,36 @@ button {
   #sidenav-button {
     margin-top: 10px;
   }
+
+  /* ------------ VERTICAL BAR ICONS -------- */
+
+  .icon-bar {
+    width: 100vw; /* Full-width */
+    background-color: rgb(105, 104, 104); /* Dark-grey background */
+    overflow: auto; /* Overflow due to float */
+  }
+  
+  .icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 12px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font size */
+  }
+  
+  .icon-bar a:hover {
+    background-color: rgb(22, 20, 20); /* Add a hover color */
+  }
+  
+  .active {
+    background-color: rgb(255, 216, 222); /* Add an active/current color */
+  }
+  
 }
 
-  /* ------------ INBOX BUTTONS ------------- */
+/* ------------ INBOX BUTTONS ------------- */
 
   .btn-light {
   margin-top: 10px;
@@ -228,6 +243,3 @@ button {
   width: 60%;
   border-radius: 40%;
   }
-
-
-  
