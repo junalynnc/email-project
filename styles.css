@@ -39,14 +39,6 @@ h2 {
     margin-left: 50px;
 }
 
-#search-bar {
-    width: 40vw;
-    border-radius: 20px 20px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    float: left;
-}
-
 #inbox-time {
     display: flex;
     justify-content: flex-end;
@@ -159,18 +151,15 @@ button {
 /* ---------- WEB VIEW MEDIA QUERY------------- */
 
 @media only screen and (min-width: 780px) {
-  #sidenav-menu, #sidenav-button {
-    display: none;
-  }
 
   /* ------------ VERTICAL BAR ICONS -------- */
 
 .icon-bar {
-  width: 90px; /* Set a specific width */
   background-color: rgb(105, 104, 104); /* Dark-grey background */
-  height: 100vh;
-  padding: 0;
+  height: 100%;
 }
+
+
 
 .icon-bar a {
   display: block; /* Make the links appear below each other instead of side-by-side */

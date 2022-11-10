@@ -28,11 +28,11 @@
 
     <!------------------------------------------ SIDE NAVBAR ---------------------------------------------------->
         
-        <div class="row">
+        <div class="row w-100">
           
           <!------VERTICAL ICON BAR-----
           ------------------------------------>
-          <div class="col-md-2 col-lg-2">
+          <div class="col-sm-1 col-md-1 col-lg-1">
             <div class="icon-bar">
               <a class="active" href="#"><i class="fa fa-home"></i></a>
               <a href="#"><i class="fa fa-search"></i></a>
@@ -44,8 +44,10 @@
 
           <!-------------------------------------- CATEGORY PANE  --------------------------------------------------->
 
-          <div id="categories" class="col-md-3 col-lg-3">
+          <div id="categories" class="col-sm-2 col-md-2 col-lg-2">
+
             <img id="logo" src="images/koala-logo.png" alt="koala-logo">
+
             <h1 id="title">Kmail</h1>
             
             <button id="new-message-button" type="button">New Message</button>
@@ -125,7 +127,7 @@
             </div>
           </div>
 
-          <div id="inbox" class="col-md-7 col-lg-7">
+          <div id="inbox" class="col-md-9 col-lg-9">
 
 
             <!------------------------------------------- INBOX ------------------------------------------------------------------------------>
@@ -135,6 +137,21 @@
             <!-------------------------------------------EMAILS IN INBOX------------------------------------------------------------------------->
 
             <h2>Inbox</h2>
+
+            <div id="page-count" class="row">
+              <div class="col-md-2 col-lg-2">
+                <p>1-7 of 7</p>
+              </div>
+
+              <div class="col-md-2 col-lg-2">
+                <i class="bi bi-arrow-left-square"></i>
+                <i class="bi bi-arrow-right-square"></i>
+              </div>
+
+              <div class="col-md-2 col-lg-2">
+                <i class="bi bi-question-square"></i>
+              </div>
+            </div>
 
             <div class="row">
 
