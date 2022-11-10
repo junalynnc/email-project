@@ -26,6 +26,15 @@ h2 {
     margin-left: 50px;
 }
 
+/* ------- INBOX CATEGORY BUTTONS ------------ */
+
+#category-icons {
+  justify-content: center;
+  white-space: nowrap;
+}
+
+/*----------------------------------------------*/
+
 button {
     border: none;
     background-color: transparent;
@@ -44,32 +53,32 @@ button {
 }
 
 
-
 /* ---------- NEW MESSAGE BUTTON ------------ */
 
 #new-message-button {
   border: 2px solid rgb(255, 216, 222);
   border-radius: 10px 10px;
   padding: 10px 20px 10px 20px;
-  font-size: 20px;
+  font-size: 1.5vw;
+  text-align: center;
   background-color: rgb(255, 216, 222);
-  margin-top: 30px;
-  margin-left: 30px;
-  margin-right: 30px;
   -webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+  width: 15vw;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 /* ------------ INBOX BUTTONS ------------- */
 
 #inbox-buttons {
-  margin-top: 10px;
+  margin-top: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 10vw;
+  width: 13vw;
   border-radius: 10px 10px;
-  font-size: 2vw;
+  font-size: 5px;
   background-color: rgb(235, 237, 232);
   -webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
@@ -121,36 +130,38 @@ button {
 }
 
 
-/**/
+
+/* -------------- MEDIA QUERIES -----------------*/
+
+
 /* ---------- WEB VIEW MEDIA QUERY------------- */
 
 @media only screen and (min-width: 780px) {
 
-  /* ------------ VERTICAL BAR ICONS -------- */
+    /* ------------ VERTICAL BAR ICONS -------- */
 
-.icon-bar {
-  background-color: rgb(105, 104, 104); /* Dark-grey background */
-  height: 100%;
-}
+    .icon-bar {
+      background-color: rgb(105, 104, 104); /* Dark-grey background */
+      height: 100%;
+      width: 8vw;
+    }
 
+    .icon-bar a {
+      display: block; /* Make the links appear below each other instead of side-by-side */
+      text-align: center; /* Center-align text */
+      padding: 16px; /* Add some padding */
+      transition: all 0.3s ease; /* Add transition for hover effects */
+      color: white; /* White text color */
+      font-size: 36px; /* Increased font-size */
+    }
 
+    .icon-bar a:hover {
+      background-color: #000; /* Add a hover color */
+    }
 
-.icon-bar a {
-  display: block; /* Make the links appear below each other instead of side-by-side */
-  text-align: center; /* Center-align text */
-  padding: 16px; /* Add some padding */
-  transition: all 0.3s ease; /* Add transition for hover effects */
-  color: white; /* White text color */
-  font-size: 36px; /* Increased font-size */
-}
-
-.icon-bar a:hover {
-  background-color: #000; /* Add a hover color */
-}
-
-.active {
-  background-color: rgb(255, 216, 222); /* Add an active/current color */
-}
+    .active {
+      background-color: rgb(255, 216, 222); /* Add an active/current color */
+    }
 
 }
 
@@ -169,40 +180,30 @@ button {
     margin-top: 10px;
   }
 
-  /* ------------ VERTICAL BAR ICONS -------- */
+      /* ------------ VERTICAL BAR ICONS -------- */
 
-  .icon-bar {
-    width: 100vw; /* Full-width */
-    background-color: rgb(105, 104, 104); /* Dark-grey background */
-    overflow: auto; /* Overflow due to float */
-  }
-  
-  .icon-bar a {
-    float: left; /* Float links side by side */
-    text-align: center; /* Center-align text */
-    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
-    padding: 12px 0; /* Some top and bottom padding */
-    transition: all 0.3s ease; /* Add transition for hover effects */
-    color: white; /* White text color */
-    font-size: 36px; /* Increased font size */
-  }
-  
-  .icon-bar a:hover {
-    background-color: rgb(22, 20, 20); /* Add a hover color */
-  }
-  
-  .active {
-    background-color: rgb(255, 216, 222); /* Add an active/current color */
-  }
-  
-}
+      .icon-bar {
+        width: 100vw; /* Full-width */
+        background-color: rgb(105, 104, 104); /* Dark-grey background */
+        overflow: auto; /* Overflow due to float */
+      }
+      
+      .icon-bar a {
+        float: left; /* Float links side by side */
+        text-align: center; /* Center-align text */
+        width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+        padding: 12px 0; /* Some top and bottom padding */
+        transition: all 0.3s ease; /* Add transition for hover effects */
+        color: white; /* White text color */
+        font-size: 36px; /* Increased font size */
+      }
+      
+      .icon-bar a:hover {
+        background-color: rgb(22, 20, 20); /* Add a hover color */
+      }
+      
+      .active {
+        background-color: rgb(255, 216, 222); /* Add an active/current color */
+      }
 
-/* ------------ INBOX BUTTONS ------------- */
-
-  .btn-light {
-  margin-top: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  width: 60%;
-  border-radius: 40%;
   }
