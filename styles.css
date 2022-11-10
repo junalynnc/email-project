@@ -8,19 +8,6 @@ body {
     height: 100vh;
 }
 
-#menu {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-  }
-
-#hamburger-menu {
-    background-color: gray;
-    display: flex;
-    align-content: center;
-}
-
 h2 {
   display: flex;
   justify-content: center;
@@ -39,12 +26,6 @@ h2 {
     margin-left: 50px;
 }
 
-#inbox-time {
-    display: flex;
-    justify-content: flex-end;
-}
-
-
 button {
     border: none;
     background-color: transparent;
@@ -62,15 +43,6 @@ button {
   margin-top: 30px;
 }
 
-#menu-titles svg {
-  display: block;
-  margin: auto;
-}
-
-#profile-pic {
-  border-radius: 80%;
-  height: 40px;
-}
 
 
 /* ---------- NEW MESSAGE BUTTON ------------ */
@@ -148,6 +120,8 @@ button {
   font-size: 2vw;
 }
 
+
+/**/
 /* ---------- WEB VIEW MEDIA QUERY------------- */
 
 @media only screen and (min-width: 780px) {
